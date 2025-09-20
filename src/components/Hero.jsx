@@ -1,6 +1,8 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 
 function Hero() {
+  const navigate=useNavigate()
   return (
     <section className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-600 to-purple-700">
       <h1 className="text-5xl font-bold">Hi, I'm Isaiah Awokiya 👋</h1>
@@ -14,14 +16,11 @@ function Hero() {
         >
           View My Work
         </a>
-        <a 
-          href="/Isaiah_Awokiya_Frontend_Resume.pdf"  
-          target="_blank" 
-          rel="noopener noreferrer"
+        <p onClick={()=>navigate('/resume')}
           className="px-6 py-3 border border-white rounded-lg font-semibold"
         >
           View Resume
-        </a>
+        </p>
       </div>
     </section>
   )

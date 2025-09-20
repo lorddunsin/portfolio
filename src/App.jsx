@@ -4,6 +4,8 @@ import About from "./components/About"
 import Skill from "./components/Skill"
 import Project from "./components/Project"
 import Contact from "./components/Contact"
+import Resume from "./components/Resume"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App() {
   return (
